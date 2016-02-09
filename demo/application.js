@@ -2,7 +2,7 @@ $(function() {
 
 	var dashboard = new PowerDashboard({
 		apiConfig: {
-			host: 'http://localhost:8000',
+			host:  window.location.protocol + '//' + window.location.host,
 			uriPrefix: 'demo/api'
 		},
 		metrics: [
